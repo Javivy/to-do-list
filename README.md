@@ -10,7 +10,7 @@
 - HTML/CSS and JavaScript
 - Webpack, linters
 
-## Live Demo (if available)
+## Live Demo
 
 [Live Demo not available yet](https://github.com/Javivy/to-do-list)
 
@@ -25,8 +25,6 @@ To get a local copy up and running follow these simple example steps.
     - cd portfolio-microverse
 
 Now you will be able to get a look to the repository, make some changes, test it and more!
-
-
 
 ## Authors
 
