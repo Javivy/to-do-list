@@ -21,12 +21,9 @@
     <div class="wrapper">
       <div class="list-header">
         <span>Today's To do</span>
-        <i class="fa-solid fa-arrows-rotate"></i>
+        <i class="fa-solid fa-arrows-rotate reload"></i>
       </div>
-      <div class="task-input">
-        <label for="task">
-          <i class="fa-solid fa-align-left"></i>
-        </label>
+      <div class="new-task-input">
         <input
           type="text"
           name="task"
@@ -36,28 +33,36 @@
         <i class="fa-solid fa-turn-down"></i>
       </div>
       <ul class="tasks-list">
-        <li>
+        <li class="task task-1">
           <label for="">
-            <input type="checkbox" id="1" />
-            <p>Renew gym menbership</p>
+            <input class="checkbox-input" type="checkbox" id="1" />
+            <p>Renew gym mebership</p>
+          </label>
+          <div class="settings">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+            <ul class="task-menu">
+              <li>
+                <i class="fa-solid fa-pen"></i>Edit
+              </li>
+              <li>
+                <i class="fa-solid fa-trash"></i>Delete
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="task task-2">
+          <label for="">
+            <input class="checkbox-input" type="checkbox" id="1" />
+            <p>Renew gym mebership</p>
           </label>
           <div class="settings">
             <i class="fa-solid fa-ellipsis-vertical"></i>
           </div>
         </li>
-        <li>
+        <li class="task task-3">
           <label for="">
-            <input type="checkbox" id="1" />
-            <p>Renew gym menbership</p>
-          </label>
-          <div class="settings">
-            <i class="fa-solid fa-ellipsis-vertical"></i>
-          </div>
-        </li>
-        <li>
-          <label for="">
-            <input type="checkbox" id="1" />
-            <p>Renew gym menbership</p>
+            <input class="checkbox-input" type="checkbox" id="1" />
+            <p>Renew gym mebership</p>
           </label>
           <div class="settings">
             <i class="fa-solid fa-ellipsis-vertical"></i>
