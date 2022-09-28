@@ -91,15 +91,11 @@ ul {
   align-items: center;
 }
 
-.task > label > p {
-
-}
-
 .checkbox-input {
   margin-right: 1rem;
-  display:inline-block;
-  width:25px;
-  height:19px;
+  display: inline-block;
+  width: 25px;
+  height: 19px;
 }
 
 .settings {
@@ -133,7 +129,7 @@ ul {
 }
 
 .task-menu li:hover {
-  background: #f5f5f5;;
+  background: #f5f5f5;
 }
 
 .task-menu li i {
