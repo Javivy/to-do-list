@@ -141,7 +141,7 @@ ul {
 .clear-button {
   padding: 1rem;
   border: none;
-  border-radius: none;
+  border-radius: 0;
   outline: none;
   color: #555;
   cursor: pointer;
