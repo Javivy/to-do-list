@@ -135,3 +135,19 @@ ul {
 .task-menu li i {
   padding-right: 8px;
 }
+
+/** CLEAR ALL COMPLETED BUTTON */
+
+.clear-button {
+  padding: 1rem;
+  border: none;
+  border-radius: none;
+  outline: none;
+  color: #555;
+  cursor: pointer;
+}
+
+.clear-button:hover {
+  text-decoration: underline;
+  color: #000;
+}
