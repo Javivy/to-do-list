@@ -17,17 +17,21 @@ const displayTask = (obj) => {
   const optionTwo = document.createElement('li');
   const deleteIcon = document.createElement('i');
 
-  task.classList.add('task', `task-${index}`);
+  task.classList.add('task');
+  label.classList.add('label');
   checkbox.classList.add('checkbox-input');
   settings.classList.add('settings');
   menuVerticalIcon.classList.add('fa-solid', 'fa-ellipsis-vertical', 'settings');
   taskMenu.classList.add('task-menu', 'task-menu-visible');
-  editIcon.classList.add('fa-solid', 'fa-pen');
-  deleteIcon.classList.add('fa-solid', 'fa-trash');
+  editIcon.classList.add('fa-solid', 'fa-pen', 'edit-icon');
+  deleteIcon.classList.add('fa-solid', 'fa-trash', 'delete-icon');
   optionOne.classList.add('edit');
   optionTwo.classList.add('delete');
 
-  checkbox.id = `${index}`;
+  checkbox.id = `checkbox-${index}`;
+  optionTwo.id = `${index}`;
+  taskMenu.id = `${index}`;
+  task.id = `${index}`;
 
   taskDescription.textContent = description;
   optionOne.textContent = 'Edit';
