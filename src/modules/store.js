@@ -18,7 +18,6 @@ const changeValue = () => {
       todos.push(taskInfo);
       localStorage.setItem('todo-list', JSON.stringify(todos));
       displayTask(taskInfo);
-      console.log(todos);
       taskInput.value = '';
       // eslint-disable-next-line no-restricted-globals
       location.reload();

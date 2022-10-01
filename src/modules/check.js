@@ -12,6 +12,7 @@ const check = (obj) => {
       todos[obj.index].completed = false;
       localStorage.setItem('todo-list', JSON.stringify(todos));
     }
+    window.location.reload();
   });
 };
 

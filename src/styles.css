@@ -47,7 +47,7 @@ ul {
 
 /* TASK INPUT */
 
-.new-task-input {
+.task-input {
   display: flex;
   align-items: center;
   padding: 0.6rem 0.5rem;
