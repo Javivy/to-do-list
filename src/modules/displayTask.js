@@ -18,7 +18,7 @@ const displayTask = (obj) => {
   const task = document.createElement('li');
   const label = document.createElement('label');
   const checkbox = document.createElement('input');
-  const taskDescription = document.createElement('p');
+  const taskDescription = document.createElement('input');
   const settings = document.createElement('div');
   const menuVerticalIcon = document.createElement('i');
   const taskMenu = document.createElement('ul');
@@ -31,6 +31,7 @@ const displayTask = (obj) => {
   label.classList.add('label');
   checkbox.classList.add('checkbox-input');
   settings.classList.add('settings');
+  taskDescription.classList.add('new-task-input');
   menuVerticalIcon.classList.add('fa-solid', 'fa-ellipsis-vertical', 'settings');
   taskMenu.classList.add('task-menu', 'task-menu-visible');
   editIcon.classList.add('fa-solid', 'fa-pen', 'edit-icon');
@@ -44,7 +45,7 @@ const displayTask = (obj) => {
   taskMenu.id = `${index}`;
   task.id = `${index}`;
 
-  taskDescription.textContent = description;
+  taskDescription.value = description;
   optionOne.textContent = 'Edit';
   optionTwo.textContent = 'Delete';
 

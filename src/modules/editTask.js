@@ -1,14 +1,17 @@
 const task = document.querySelectorAll('.task');
-const taskInput = document.getElementById('task');
 
 const todos = JSON.parse(localStorage.getItem('todo-list')) || [];
 
 const editTask = () => {
   task.forEach((t) => {
     t.addEventListener('click', (e) => {
-      if (e.target.classList.contains('edit') || e.target.classList.contains('edit-icon')) {
-        taskInput.value = todos[t.id].description;
-      }
+      const newTaskInput = document.getElementById(`description-${t.id}`);
+      newTaskInput.addEventListener('keypress', (event) => {
+        if (event.key === 'Enter') {
+          todos[t.id].description = newTaskInput.value;
+          localStorage.setItem('todo-list', JSON.stringify(todos));
+        }
+      });
     });
   });
 };

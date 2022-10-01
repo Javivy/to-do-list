@@ -16,8 +16,8 @@ const check = (obj) => {
 };
 
 const checkUpdate = (obj) => {
-  const checkbox = document.getElementById(`checkbox-${obj.id}`);
-  const taskName = document.getElementById(`description-${obj.id}`);
+  const checkbox = document.getElementById(`checkbox-${obj.index}`);
+  const taskName = document.getElementById(`description-${obj.index}`);
   if (obj.completed === true) {
     checkbox.checked = true;
     taskName.classList.add('checked');

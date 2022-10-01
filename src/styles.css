@@ -86,6 +86,11 @@ ul {
   justify-content: space-between;
 }
 
+.new-task-input {
+  outline: none;
+  border: none;
+}
+
 .task > label {
   display: flex;
   align-items: center;
