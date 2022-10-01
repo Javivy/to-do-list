@@ -22,9 +22,7 @@ const displayTask = (obj) => {
   const settings = document.createElement('div');
   const menuVerticalIcon = document.createElement('i');
   const taskMenu = document.createElement('ul');
-  const optionOne = document.createElement('li');
-  const editIcon = document.createElement('i');
-  const optionTwo = document.createElement('li');
+  const optionDelete = document.createElement('li');
   const deleteIcon = document.createElement('i');
 
   task.classList.add('task');
@@ -34,34 +32,23 @@ const displayTask = (obj) => {
   taskDescription.classList.add('new-task-input');
   menuVerticalIcon.classList.add('fa-solid', 'fa-ellipsis-vertical', 'settings');
   taskMenu.classList.add('task-menu', 'task-menu-visible');
-  editIcon.classList.add('fa-solid', 'fa-pen', 'edit-icon');
   deleteIcon.classList.add('fa-solid', 'fa-trash', 'delete-icon');
-  optionOne.classList.add('edit');
-  optionTwo.classList.add('delete');
+  optionDelete.classList.add('delete');
 
   checkbox.id = `checkbox-${index}`;
   taskDescription.id = `description-${index}`;
-  optionTwo.id = `${index}`;
+  optionDelete.id = `${index}`;
   taskMenu.id = `${index}`;
   task.id = `${index}`;
 
   taskDescription.value = description;
-  optionOne.textContent = 'Edit';
-  optionTwo.textContent = 'Delete';
+  optionDelete.textContent = 'Delete';
 
   checkbox.type = 'checkbox';
 
-  // deleteIcon.addEventListener('click', () => {
-  //   deleteFunction(index);
-  // });
-  // optionTwo.addEventListener('click', () => {
-  //   deleteFunction(index);
-  // });
-
   label.append(checkbox, taskDescription);
-  optionOne.append(editIcon);
-  optionTwo.append(deleteIcon);
-  taskMenu.append(optionOne, optionTwo);
+  optionDelete.append(deleteIcon);
+  taskMenu.append(optionDelete);
   settings.append(menuVerticalIcon, taskMenu);
   task.append(label, settings);
   tasksList.append(task);
