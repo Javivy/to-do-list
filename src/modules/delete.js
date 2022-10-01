@@ -13,10 +13,10 @@ const deleteTask = () => {
       }
     });
   });
-  todos.forEach((task) => {
-    if (task.index !== 0) {
-      task.index -= 1;
-    }
+  todos.map((task) => {
+    task.index = todos.indexOf(task);
+    localStorage.setItem('todo-list', JSON.stringify(todos));
+    return task;
   });
 };
 

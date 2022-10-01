@@ -13,6 +13,11 @@ const check = (obj) => {
       localStorage.setItem('todo-list', JSON.stringify(todos));
     }
   });
+};
+
+const checkUpdate = (obj) => {
+  const checkbox = document.getElementById(`checkbox-${obj.id}`);
+  const taskName = document.getElementById(`description-${obj.id}`);
   if (obj.completed === true) {
     checkbox.checked = true;
     taskName.classList.add('checked');
@@ -21,5 +26,7 @@ const check = (obj) => {
     taskName.classList.remove('checked');
   }
 };
+
+export { checkUpdate };
 
 export default check;

@@ -3,9 +3,10 @@ import displayTask from './displayTask.js';
 
 const taskInput = document.getElementById('task');
 const todos = JSON.parse(localStorage.getItem('todo-list')) || [];
+
 if (todos.length !== 0) {
-  todos.forEach((e) => {
-    displayTask(e);
+  todos.forEach((task) => {
+    displayTask(task);
   });
 }
 
@@ -17,6 +18,7 @@ const changeValue = () => {
       todos.push(taskInfo);
       localStorage.setItem('todo-list', JSON.stringify(todos));
       displayTask(taskInfo);
+      console.log(todos);
       taskInput.value = '';
       // eslint-disable-next-line no-restricted-globals
       location.reload();

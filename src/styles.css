@@ -115,12 +115,17 @@ ul {
   background: #fff;
   border-radius: 5px;
   z-index: 3;
+  transform: scale(0);
+  transform-origin: top right;
+  right: 0;
+  top: -5px;
+  transition: transform 0.2s ease;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
   padding: 5px 0;
 }
 
-.task-menu-visible {
-  display: none;
+.settings:hover .task-menu {
+  transform: scale(1);
 }
 
 .task-menu li {
