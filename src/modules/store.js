@@ -19,8 +19,7 @@ const changeValue = () => {
       localStorage.setItem('todo-list', JSON.stringify(todos));
       displayTask(taskInfo);
       taskInput.value = '';
-      // eslint-disable-next-line no-restricted-globals
-      location.reload();
+      window.location.reload();
     }
   });
 };

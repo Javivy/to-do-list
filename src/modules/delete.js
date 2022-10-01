@@ -8,8 +8,7 @@ const deleteTask = () => {
       if (e.target.classList.contains('delete') || e.target.classList.contains('delete-icon')) {
         todos.splice(t.id, 1);
         localStorage.setItem('todo-list', JSON.stringify(todos));
-        // eslint-disable-next-line no-restricted-globals
-        location.reload();
+        window.location.reload();
       }
     });
   });

@@ -2,16 +2,6 @@ import check from './check.js';
 
 const tasksList = document.querySelector('.tasks-list');
 
-// const todos = JSON.parse(localStorage.getItem('todo-list'));
-
-// function deleteFunction(id) {
-//   console.log(todos);
-//   console.log(id);
-//   // todos = todos.splice(id, 1);
-//   // localStorage.setItem('todo-list', JSON.stringify(todos));
-//   // console.log(todos);
-// }
-
 const displayTask = (obj) => {
   const { description, index } = obj;
 
