@@ -4,7 +4,7 @@ const todos = JSON.parse(localStorage.getItem('todo-list')) || [];
 
 const editTask = () => {
   task.forEach((t) => {
-    t.addEventListener('click', (e) => {
+    t.addEventListener('click', () => {
       const newTaskInput = document.getElementById(`description-${t.id}`);
       newTaskInput.addEventListener('keypress', (event) => {
         if (event.key === 'Enter') {
